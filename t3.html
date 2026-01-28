@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Get In Touch</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    /* EXACT BACKGROUND GRADIENT */
+    background: linear-gradient(110deg,
+        #4bb34f 0%,
+        #4bb34f 35%,
+        #4f9fd6 100%
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* WRAPPER */
+.wrapper{
+    text-align:center;
+}
+
+/* FORM CARD */
+.form-box{
+    background:#ffffff;
+    width:460px;
+    padding:35px 40px;
+    border-radius:3px;
+}
+
+/* HEADING */
+.form-box h2{
+    text-align:left;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:22px;
+    color:#333;
+}
+
+/* ROW */
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:16px;
+}
+.col{
+    flex:1;
+    text-align:left;
+}
+
+/* LABEL */
+label{
+    font-size:12px;
+    color:#777;
+    display:block;
+    margin-bottom:6px;
+}
+
+/* INPUTS */
+input, textarea{
+    width:100%;
+    padding:10px;
+    background:#f2f2f2;
+    border:1px solid #e1e1e1;
+    font-size:13px;
+    color:#555;
+}
+
+/* FIELD */
+.field{
+    margin-bottom:16px;
+    text-align:left;
+}
+
+/* TEXTAREA */
+textarea{
+    height:90px;
+    resize:none;
+}
+
+/* SUBMIT BUTTON – EXACT GRADIENT */
+button{
+    display:block;
+    margin:18px auto 0;
+    padding:10px 36px;
+    background: linear-gradient(to right,
+        #4a90e2,
+        #4bb34f
+    );
+    color:#fff;
+    border:none;
+    font-size:12px;
+    cursor:pointer;
+}
+
+/* PHONE */
+.phone{
+    margin-top:18px;
+    font-size:12px;
+    color:#ffffff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="form-box">
+        <h2>GET IN TOUCH</h2>
+
+        <!-- Name & Email -->
+        <div class="row">
+            <div class="col">
+                <label>Tell your name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="col">
+                <label>Enter your email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+        </div>
+
+        <!-- Website -->
+        <div class="field">
+            <label>Your Website</label>
+            <input type="text" placeholder="http://">
+        </div>
+
+        <!-- Message -->
+        <div class="field">
+            <label>Message</label>
+            <textarea placeholder="Your message here..."></textarea>
+        </div>
+
+        <!-- Button -->
+        <button>SUBMIT</button>
+    </div>
+
+    <div class="phone">
+        Call us on +001 345 6789
+    </div>
+
+</div>
+
+</body>
+</html>
